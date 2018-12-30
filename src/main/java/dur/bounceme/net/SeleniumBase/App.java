@@ -18,7 +18,7 @@ public class App {
     private void scrapeBooks() throws IOException {
         properties.loadFromXML(App.class.getResourceAsStream("/selenium.xml"));
         String s = new FileLoader("/catalog.html").load();
-        LOG.info(s);
+        
     }
 
 }
