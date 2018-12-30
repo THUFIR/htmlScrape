@@ -48,11 +48,8 @@ public class App {
 
         InputStream in = getClass().getResourceAsStream("/selenium.xml");
         BufferedReader br = new BufferedReader(new InputStreamReader(in));
-
         String s = null;
-
         while ((s = br.readLine()) != null) {
-
             LOG.info(s);
         }
 
