@@ -16,7 +16,7 @@ class HomePage extends AbstractPage {
     private HomePage() {
     }
 
-    public HomePage(WebDriver webDriver) {
+    private HomePage(WebDriver webDriver) {
         LOG.fine(webDriver.getCurrentUrl());
         this.webDriver = webDriver;
         PageFactory.initElements(webDriver, this);
